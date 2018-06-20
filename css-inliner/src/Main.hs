@@ -43,7 +43,7 @@ data Block = Rule { tag :: Text,
 -- inline
 inline :: Block -> XmlTree -> XmlTree
 inline block, doc =
-           doc >>> css $ unpack tag >>> addAttr "style" $ pairs2str pairs
+           doc >>> css $ unpack tag >>> addAttr "style" $ tuples2str pairs
 
 --
 tuples2str :: [(Text,Text)] -> String
