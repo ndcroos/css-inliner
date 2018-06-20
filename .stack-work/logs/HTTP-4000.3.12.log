@@ -1,0 +1,104 @@
+Configuring HTTP-4000.3.12...
+Preprocessing library for HTTP-4000.3.12..
+Building library for HTTP-4000.3.12..
+[ 1 of 18] Compiling Network.HTTP.Base64 ( Network/HTTP/Base64.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Base64.o )
+[ 2 of 18] Compiling Network.HTTP.MD5Aux ( Network/HTTP/MD5Aux.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/MD5Aux.o )
+[ 3 of 18] Compiling Network.HTTP.Utils ( Network/HTTP/Utils.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Utils.o )
+[ 4 of 18] Compiling Network.BufferType ( Network/BufferType.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/BufferType.o )
+[ 5 of 18] Compiling Network.Stream   ( Network/Stream.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/Stream.o )
+
+[;1mNetwork/Stream.hs:35:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use "Control.Monad.Except" instead[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m35 |[0m[0m [;1m[35mimport Control.Monad.Error[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/Stream.hs:44:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m44 |[0m[0m instance [;1m[35mError[0m[0m ConnError where
+[;1m[34m   |[0m[0m[;1m[35m          ^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/Stream.hs:44:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m44 |[0m[0m instance [;1m[35mError[0m[0m ConnError where
+[;1m[34m   |[0m[0m[;1m[35m          ^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/Stream.hs:45:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘strMsg’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m45 |[0m[0m   noMsg = [;1m[35mstrMsg[0m[0m "unknown error"
+[;1m[34m   |[0m[0m[;1m[35m           ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/Stream.hs:52:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘strMsg’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m52 |[0m[0m failMisc x = failWith ([;1m[35mstrMsg[0m[0m x)
+[;1m[34m   |[0m[0m[;1m[35m                        ^^^^^^[0m[0m
+[0m[0m[0m[ 6 of 18] Compiling Network.HTTP.Headers ( Network/HTTP/Headers.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Headers.o )
+[ 7 of 18] Compiling Network.HTTP.Cookie ( Network/HTTP/Cookie.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Cookie.o )
+[ 8 of 18] Compiling Paths_HTTP       ( .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/autogen/Paths_HTTP.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Paths_HTTP.o )
+[ 9 of 18] Compiling Network.HTTP.Base ( Network/HTTP/Base.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Base.o )
+
+[;1mNetwork/HTTP/Base.hs:110:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use "Control.Monad.Except" instead[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m110 |[0m[0m [;1m[35mimport Control.Monad.Error ()[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[10 of 18] Compiling Network.TCP      ( Network/TCP.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/TCP.o )
+
+[;1mNetwork/TCP.hs:245:32: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m245 |[0m[0m                             ) ([;1m[35msClose[0m[0m s)
+[;1m[34m    |[0m[0m[;1m[35m                                ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/TCP.hs:298:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m298 |[0m[0m     [;1m[35msClose[0m[0m sk
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^^[0m[0m
+[0m[0m[0m[11 of 18] Compiling Network.StreamDebugger ( Network/StreamDebugger.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/StreamDebugger.o )
+[12 of 18] Compiling Network.StreamSocket ( Network/StreamSocket.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/StreamSocket.o )
+
+[;1mNetwork/StreamSocket.hs:53:21: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘recv’ (imported from Network.Socket):
+    "Use recv defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m53 |[0m[0m         in catchIO ([;1m[35mrecv[0m[0m sock len) handler
+[;1m[34m   |[0m[0m[;1m[35m                     ^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/StreamSocket.hs:62:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m62 |[0m[0m          [;1m[35msClose[0m[0m sk
+[;1m[34m   |[0m[0m[;1m[35m          ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mNetwork/StreamSocket.hs:92:12: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of ‘send’ (imported from Network.Socket):
+    "Use send defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m92 |[0m[0m    fn x  = [;1m[35msend[0m[0m sk x >>= \i -> fn (drop i x)
+[;1m[34m   |[0m[0m[;1m[35m            ^^^^[0m[0m
+[0m[0m[0m[13 of 18] Compiling Network.HTTP.Stream ( Network/HTTP/Stream.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Stream.o )
+[14 of 18] Compiling Network.HTTP.HandleStream ( Network/HTTP/HandleStream.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/HandleStream.o )
+[15 of 18] Compiling Network.HTTP.Auth ( Network/HTTP/Auth.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Auth.o )
+[16 of 18] Compiling Network.HTTP.Proxy ( Network/HTTP/Proxy.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP/Proxy.o )
+[17 of 18] Compiling Network.HTTP     ( Network/HTTP.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/HTTP.o )
+[18 of 18] Compiling Network.Browser  ( Network/Browser.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Network/Browser.o )
+Installing library in /home/osboxes/.stack/snapshots/x86_64-linux-tinfo6/lts-11.14/8.2.2/lib/x86_64-linux-ghc-8.2.2/HTTP-4000.3.12-2aU65P8rXZmEkv3nboPsGr
+Registering library for HTTP-4000.3.12..

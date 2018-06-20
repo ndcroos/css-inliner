@@ -1,0 +1,10 @@
+Configuring hxt-unicode-9.0.2.4...
+Preprocessing library for hxt-unicode-9.0.2.4..
+Building library for hxt-unicode-9.0.2.4..
+[1 of 5] Compiling Data.Char.IsoLatinTables ( src/Data/Char/IsoLatinTables.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/Char/IsoLatinTables.o )
+[2 of 5] Compiling Data.String.EncodingNames ( src/Data/String/EncodingNames.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/String/EncodingNames.o )
+[3 of 5] Compiling Data.String.UTF8 ( src/Data/String/UTF8.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/String/UTF8.o )
+[4 of 5] Compiling Data.String.UTF8Decoding ( src/Data/String/UTF8Decoding.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/String/UTF8Decoding.o )
+[5 of 5] Compiling Data.String.Unicode ( src/Data/String/Unicode.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/String/Unicode.o )
+Installing library in /home/osboxes/.stack/snapshots/x86_64-linux-tinfo6/lts-11.14/8.2.2/lib/x86_64-linux-ghc-8.2.2/hxt-unicode-9.0.2.4-JQmH0brCxMfxlpeXEYE5
+Registering library for hxt-unicode-9.0.2.4..

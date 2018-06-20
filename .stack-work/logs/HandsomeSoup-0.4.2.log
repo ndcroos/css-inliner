@@ -1,0 +1,8 @@
+Configuring HandsomeSoup-0.4.2...
+Preprocessing library for HandsomeSoup-0.4.2..
+Building library for HandsomeSoup-0.4.2..
+[1 of 3] Compiling Text.CSS.Utils   ( src/Text/CSS/Utils.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/CSS/Utils.o )
+[2 of 3] Compiling Text.CSS.Parser  ( src/Text/CSS/Parser.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/CSS/Parser.o )
+[3 of 3] Compiling Text.HandsomeSoup ( src/Text/HandsomeSoup.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/HandsomeSoup.o )
+Installing library in /home/osboxes/.stack/snapshots/x86_64-linux-tinfo6/lts-11.14/8.2.2/lib/x86_64-linux-ghc-8.2.2/HandsomeSoup-0.4.2-Gac1CBS2ixCARN90Dh1s4H
+Registering library for HandsomeSoup-0.4.2..

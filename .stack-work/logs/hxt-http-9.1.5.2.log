@@ -1,0 +1,8 @@
+Configuring hxt-http-9.1.5.2...
+Preprocessing library for hxt-http-9.1.5.2..
+Building library for hxt-http-9.1.5.2..
+[1 of 3] Compiling Text.XML.HXT.IO.GetHTTPNative ( src/Text/XML/HXT/IO/GetHTTPNative.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/XML/HXT/IO/GetHTTPNative.o )
+[2 of 3] Compiling Text.XML.HXT.Arrow.LibHTTPInput ( src/Text/XML/HXT/Arrow/LibHTTPInput.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/XML/HXT/Arrow/LibHTTPInput.o )
+[3 of 3] Compiling Text.XML.HXT.HTTP ( src/Text/XML/HXT/HTTP.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Text/XML/HXT/HTTP.o )
+Installing library in /home/osboxes/.stack/snapshots/x86_64-linux-tinfo6/lts-11.14/8.2.2/lib/x86_64-linux-ghc-8.2.2/hxt-http-9.1.5.2-9zSGKD7aXyrLA1q0jri799
+Registering library for hxt-http-9.1.5.2..

@@ -1,0 +1,9 @@
+Configuring hxt-charproperties-9.2.0.1...
+Preprocessing library for hxt-charproperties-9.2.0.1..
+Building library for hxt-charproperties-9.2.0.1..
+[1 of 4] Compiling Data.Char.Properties.UnicodeBlocks ( src/Data/Char/Properties/UnicodeBlocks.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/Char/Properties/UnicodeBlocks.o )
+[2 of 4] Compiling Data.Set.CharSet ( src/Data/Set/CharSet.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/Set/CharSet.o )
+[3 of 4] Compiling Data.Char.Properties.XMLCharProps ( src/Data/Char/Properties/XMLCharProps.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/Char/Properties/XMLCharProps.o )
+[4 of 4] Compiling Data.Char.Properties.UnicodeCharProps ( src/Data/Char/Properties/UnicodeCharProps.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.0.1.0/build/Data/Char/Properties/UnicodeCharProps.o )
+Installing library in /home/osboxes/.stack/snapshots/x86_64-linux-tinfo6/lts-11.14/8.2.2/lib/x86_64-linux-ghc-8.2.2/hxt-charproperties-9.2.0.1-AUb7E6mkZ2fDXtvIiRtV8v
+Registering library for hxt-charproperties-9.2.0.1..
