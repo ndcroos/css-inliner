@@ -42,7 +42,7 @@ data Block = Rule { tag :: Text,
                   
 -- inline
 inline :: Block -> XmlTree -> XmlTree
-inline block, doc =
+inline block doc =
            doc >>> css $ unpack tag >>> addAttr "style" $ tuples2str pairs
 
 --
