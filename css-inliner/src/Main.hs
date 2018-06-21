@@ -13,6 +13,7 @@ import Text.CSS.Render
 import Data.Typeable
 import Text.HTML.TagSoup
 import Data.Text
+import Debug.Trace
 
 data Input = FileInput FilePath
 
@@ -36,19 +37,25 @@ selectStyle = deep (isElem >>> hasName "style")
 --styleText :: ArrowXml a => a XmlTree String
 --styleText = selectStyle >>> getText
 
-data Block = Rule { tag :: Text,
-                    pairs :: [Text,Text]
-                    }
-                  
--- inline
-inline :: Block -> XmlTree -> XmlTree
-inline block doc =
-           doc >>> css $ unpack tag >>> addAttr "style" $ tuples2str pairs
 
---
-tuples2str :: [(Text,Text)] -> String
-tuples2str (prop,val) = prop ++ ":" ++ val  ++ ";" 
-tuples2str x:xs = tuples2str  ++ ";" ++ tuples2str(xs)
+--inline :: [NestedBlock] -> XmlTree -> Maybe XmlTree
+  --doc >>> css $ unpack tag >>> addAttr "style" $ tuples2str x
+--inline x doc = Just doc
+--inline _  doc = Nothing
+--inline (LeafBlock _) doc = Just doc
+--inline (NestedBlock _ _) doc = Nothing
+
+--tuples2str :: [NestedBlock] -> String
+--tuples2str [(prop,val)] = prop ++ ":" ++ val  ++ ";" 
+--tuples2str [x:xs] = tuples2str [x] ++ ";" ++ tuples2str(xs)
+
+traceThis :: (Show a) => a -> a
+traceThis x = Debug.Trace.trace (show x) x
+
+traceShow :: (Show a) => a -> b -> b
+traceShow = Debug.Trace.trace . show
+
+debug = flip Debug.Trace.trace
 
 main :: IO ()
 main = do
@@ -56,15 +63,19 @@ main = do
   doc <- readFile "style.html"
   css <- runX (readDocument [ withValidate no] "style.html"
                >>> selectStyle /> getText)
+  putStrLn "prelude.head css: \n"
   putStrLn $ Prelude.head css
   putStrLn "\n"
-  parsedCss <- return $ parseBlocks $ Data.Text.pack $ Prelude.head css
+  -- parseNestedBlocks is the preferred parser: it captures media queries
+  -- parseBlocks throws away media queries.
+  parsedCss <- return $ parseNestedBlocks $ Data.Text.pack $ Prelude.head css
+  putStrLn "show parsedCss: \n"
   print parsedCss
   case parsedCss of
     Left msg -> print msg
     Right(x) -> do
+      print x
       putStrLn "Inlining..."
-      inlined = inline(x, doc)
+      let doc2 = inline x doc
       putStrLn "Inlining done"
-  
   putStrLn "Done!"

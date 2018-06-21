@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-20 15:20:11.627753739 UTC
+2018-06-21 12:45:52.514802997 UTC
 
 interface main:Main 8022
-  interface hash: 1a4e4ce051f3a90373c31d72396a2a47
-  ABI hash: dc4088f78c0a2128b53bf7d7ed14443d
+  interface hash: c1b296f74be2bb99db9645cfc9680f6d
+  ABI hash: 2804285d834c0b1e7b32a8a71777b7a8
   export-list hash: b56543959556a43b598181b55f903cbb
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ddd89b450480d393f7fb49a56afff857
@@ -162,7 +162,7 @@ af5de4fca5a2f9a9cd989eda711d0e67
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-1cfb0f564df54aae456bdac8b44ff45f
+64e0e9d42c595e287b6e85107be47df9
   selectStyle ::
     Text.XML.HXT.Arrow.XmlArrow.ArrowXml a =>
     a Text.XML.HXT.DOM.TypeDefs.XmlTree Text.XML.HXT.DOM.TypeDefs.XmlTree
@@ -189,14 +189,14 @@ af5de4fca5a2f9a9cd989eda711d0e67
                       (Text.XML.HXT.Arrow.XmlArrow.hasName
                          @ a
                          $dArrowXml
-                         Main.selectStyle_n)
+                         Main.selectStyle1)
                       (Text.XML.HXT.Arrow.XmlArrow.isElem @ a $dArrowXml))) -}
-9e9b6b61619ee64a4c8bd32f41e5c38e
-  selectStyle1 :: GHC.Prim.Addr#
+fd182586487a760134ee5263ec2c0f95
+  selectStyle1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.selectStyle2) -}
+624aa3ae5cc1c6b9abd5a5c1300e1298
+  selectStyle2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("style"#) -}
-2d3a5e58f3cb3039e71305c3f99cc27a
-  selectStyle_n :: GHC.Base.String
-  {- Unfolding: (GHC.CString.unpackCString# Main.selectStyle1) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
