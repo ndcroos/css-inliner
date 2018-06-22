@@ -60,8 +60,8 @@ debug = flip Debug.Trace.trace
 main :: IO ()
 main = do
   putStrLn "Started execution... \n"
-  doc <- readFile "style.html"
-  css <- runX (readDocument [ withValidate no] "style.html"
+  doc <- readFile "./htmlfiles/style.html"
+  css <- runX (readDocument [ withValidate no] "./htmlfiles/style.html"
                >>> selectStyle /> getText)
   putStrLn "prelude.head css: \n"
   putStrLn $ Prelude.head css
@@ -76,6 +76,6 @@ main = do
     Right(x) -> do
       print x
       putStrLn "Inlining..."
-      let doc2 = inline x doc
+      --let doc2 = inline x doc
       putStrLn "Inlining done"
   putStrLn "Done!"
